@@ -8,4 +8,6 @@ struct F1Service {
         let pilotos = try JSONDecoder().decode([Driver].self, from: data)
         return pilotos
     }
+    
+    fun buscarEquipe() async throws -> [E]
 }
